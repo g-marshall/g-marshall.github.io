@@ -9,7 +9,7 @@
 <title>Guillermo Marshall (Economics, UBC Sauder)</title>
       <meta name = "keywords" content = "Guillermo Marshall, Guillermo Marshall Manriquez, Marshall UBC, Marshall Economics, Marshall Econ, Guillermo Marshall Econ,UBC Sauder, guillermo marshall econ, guillermo marshall ubc, g marshall econ" />
       <meta name = "description" content = "Personal website of Guillermo Marshall, Associate Professor of Strategy and Business Economics at UBC Sauder" />
-
+	
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KX3V0G979K"></script>
 <script>
@@ -18,7 +18,16 @@
   gtag('js', new Date());
 
   gtag('config', 'G-KX3V0G979K');
-</script> 
+	
+  <script>
+    function myFunction() {
+      var x = document.lastModified;
+      document.getElementById("demo").innerHTML = x;
+    }
+  </script>t.getElementById("demo").innerHTML = new Date(document.lastModified).toISOString().substr(11, 8);
+}
+
+myFunction()
 
 </head>
 
@@ -310,6 +319,8 @@ Undergraduate: Business strategy
 
 </div>
 
+	<body onload="myFunction()">
+  Last updated: <span id="demo"></span>
 
 </body>
 </html>
